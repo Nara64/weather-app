@@ -27,7 +27,7 @@
 </head>
 
 <body
-    class="min-h-screen bg-cover bg-center bg-[url('https://images.unsplash.com/photo-1581224463294-908316338239?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80')] lg:bg-contain lg:bg-no-repeat font-montserrat">
+    class="min-h-screen bg-cover bg-center bg-[url('https://images.unsplash.com/photo-1581224463294-908316338239?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80')] lg:bg-contain lg:bg-no-repeat font-montserrat text-">
     <header class="h-10 backdrop-blur-md backdrop-opacity-90 shadow-xl lg:w-1/3">
         <div class="flex justify-between items-center h-10 mx-4">
             <button>
@@ -65,9 +65,14 @@
     </header>
     <main class="flex flex-col justify-center items-center my-8 gap-4">
         <div
-            class="h-96 w-4/5 backdrop-blur-md shadow-xl rounded-2xl flex flex-col justify-center items-center lg:w-1/4">
-            <p class="">Besançon</p>
-            <div class="flex items-center gap-2">
+            class="py-2 backdrop-blur-md bg-white/10 shadow-xl rounded-2xl flex flex-col justify-center items-center lg:w-1/4">
+            <div class="flex">
+                <p class="uppercase font-normal text-xl">Besançon</p>
+                <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none">
+                    <path d="M9.32091 18.1979L9.3202 18.1972C6.60692 15.6433 4.3941 13.5569 2.85377 11.6008C1.31944 9.65224 0.5 7.89067 0.5 5.99455C0.5 2.8857 2.83398 0.5 5.775 0.5C7.44378 0.5 9.05915 1.30908 10.1147 2.58564L10.5 3.05168L10.8853 2.58564C11.9408 1.30908 13.5562 0.5 15.225 0.5C18.166 0.5 20.5 2.8857 20.5 5.99455C20.5 7.89067 19.6806 9.65224 18.1462 11.6008C16.6059 13.5569 14.3931 15.6433 11.6798 18.1972L11.6791 18.1979L10.5 19.3121L9.32091 18.1979Z" stroke="#CA0000"/>
+                    </svg>
+            </div>
+            <div class="flex items-center gap-1">
                 <svg xmlns="http://www.w3.org/2000/svg" width="39" height="32" viewBox="0 0 39 32" fill="none">
                     <g filter="url(#filter0_dd_16_37)">
                         <g clip-path="url(#clip0_16_37)">
@@ -109,17 +114,17 @@
                         </clipPath>
                     </defs>
                 </svg>
-                <p>France</p>
+                <p class="text-base font-normal">France</p>
             </div>
-            <p>14:11</p>
+            <p class="text-2xl font-medium">14:11</p>
             <svg xmlns="http://www.w3.org/2000/svg" width="110" height="110" viewBox="0 0 110 110" fill="none">
                 <path
                     d="M55 16.5385V5M27.8038 27.8038L19.6462 19.6462M16.5385 55H5M55 105V93.4615M90.3538 90.3538L82.1961 82.2M105 55H93.4615M27.8038 82.1961L19.6462 90.3538M90.3538 19.6462L82.2 27.8038M78.0769 55C78.0769 61.1204 75.6456 66.9901 71.3178 71.3178C66.9901 75.6456 61.1204 78.0769 55 78.0769C48.8796 78.0769 43.0099 75.6456 38.6822 71.3178C34.3544 66.9901 31.9231 61.1204 31.9231 55C31.9231 48.8796 34.3544 43.0099 38.6822 38.6822C43.0099 34.3544 48.8796 31.9231 55 31.9231C61.1204 31.9231 66.9901 34.3544 71.3178 38.6822C75.6456 43.0099 78.0769 48.8796 78.0769 55Z"
                     stroke="#F9AB37" stroke-width="9" stroke-linecap="round" stroke-linejoin="round" />
             </svg>
-            <p>25°C</p>
-            <div class="backdrop-blur-md shadow-xl rounded-2xl p-2 w-3/4 flex flex-col items-center">
-                <div class="flex gap-12 border-b-2  border-gray-400">
+            <p class="text-3xl uppercase font-normal">25°C</p>
+            <div class="backdrop-blur-md bg-white/10 shadow-xl rounded-2xl gap-2 py-2 w-3/4 flex flex-col items-center">
+                <div class="flex gap-12 h-7">
                     <div>16:00</div>
                     <div class="flex items-center gap-4">
                         <svg xmlns="http://www.w3.org/2000/svg" width="19" height="18" viewBox="0 0 19 18" fill="none">
@@ -130,9 +135,10 @@
                         25°C
                     </div>
                 </div>
-                <div class="flex items-center gap-8">
+                <div class="w-40 h-px bg-transparent/10"></div>
+                <div class="flex gap-12 h-7">
                     <div>18:00</div>
-                    <div class="flex items-center">
+                    <div class="flex items-center gap-4">
                         <svg xmlns="http://www.w3.org/2000/svg" width="19" height="18" viewBox="0 0 19 18" fill="none">
                             <path
                                 d="M9.5 2.84615V1M5.14862 4.64862L3.84338 3.34338M3.34615 9H1.5M9.5 17V15.1538M15.1566 14.6566L13.8514 13.352M17.5 9H15.6538M5.14862 13.3514L3.84338 14.6566M15.1566 3.34338L13.852 4.64862M13.1923 9C13.1923 9.97926 12.8033 10.9184 12.1109 11.6109C11.4184 12.3033 10.4793 12.6923 9.5 12.6923C8.52074 12.6923 7.58159 12.3033 6.88914 11.6109C6.1967 10.9184 5.80769 9.97926 5.80769 9C5.80769 8.02074 6.1967 7.08159 6.88914 6.38914C7.58159 5.6967 8.52074 5.30769 9.5 5.30769C10.4793 5.30769 11.4184 5.6967 12.1109 6.38914C12.8033 7.08159 13.1923 8.02074 13.1923 9Z"
@@ -141,9 +147,10 @@
                         23°C
                     </div>
                 </div>
-                <div class="flex items-center">
+                <div class="w-40 h-px bg-transparent/10"></div>
+                <div class="flex gap-12 h-7">
                     <div>20:00</div>
-                    <div class="flex items-center">
+                    <div class="flex items-center gap-4">
                         <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none">
                             <path
                                 d="M10.5936 1.52433C10.5936 1.38527 10.5418 1.2519 10.4497 1.15357C10.3575 1.05524 10.2325 1 10.1021 1C9.97178 1 9.84676 1.05524 9.75459 1.15357C9.66242 1.2519 9.61064 1.38527 9.61064 1.52433V2.57299C9.61064 2.71205 9.66242 2.84542 9.75459 2.94375C9.84676 3.04208 9.97178 3.09732 10.1021 3.09732C10.2325 3.09732 10.3575 3.04208 10.4497 2.94375C10.5418 2.84542 10.5936 2.71205 10.5936 2.57299V1.52433ZM14.2729 3.5839C14.3198 3.53553 14.3573 3.47767 14.383 3.4137C14.4088 3.34973 14.4224 3.28093 14.4229 3.21131C14.4235 3.14169 14.4111 3.07265 14.3864 3.00821C14.3616 2.94377 14.3251 2.88523 14.279 2.836C14.2329 2.78677 14.178 2.74783 14.1176 2.72147C14.0572 2.69511 13.9924 2.68184 13.9272 2.68244C13.8619 2.68305 13.7974 2.69751 13.7375 2.72499C13.6775 2.75247 13.6233 2.79242 13.5779 2.8425L12.882 3.5839C12.7897 3.68235 12.7379 3.81589 12.7379 3.95512C12.7379 4.09436 12.7897 4.2279 12.882 4.32635C12.9743 4.42481 13.0994 4.48012 13.23 4.48012C13.3605 4.48012 13.4857 4.42481 13.5779 4.32635L14.2729 3.5839ZM6.62631 2.8425C6.53362 2.74699 6.40947 2.69414 6.2806 2.69533C6.15173 2.69652 6.02846 2.75167 5.93733 2.84888C5.84621 2.9461 5.79452 3.07761 5.7934 3.21508C5.79228 3.35256 5.84182 3.48501 5.93135 3.5839L6.62631 4.32635C6.67201 4.3751 6.72626 4.41377 6.78597 4.44015C6.84567 4.46654 6.90966 4.48012 6.97429 4.48012C7.03891 4.48012 7.10291 4.46654 7.16261 4.44015C7.22232 4.41377 7.27657 4.3751 7.32226 4.32635C7.36796 4.2776 7.40421 4.21973 7.42894 4.15603C7.45367 4.09234 7.4664 4.02407 7.4664 3.95512C7.4664 3.88618 7.45367 3.81791 7.42894 3.75422C7.40421 3.69052 7.36796 3.63265 7.32226 3.5839L6.62631 2.8425ZM8.3308 6.38068C8.45297 6.11058 8.62802 5.87158 8.84413 5.67979C9.06024 5.488 9.31239 5.34789 9.58358 5.2689C9.85477 5.18991 10.1387 5.17389 10.4162 5.22191C10.6937 5.26992 10.9583 5.38087 11.1921 5.54725C11.426 5.71364 11.6237 5.9316 11.7719 6.18643C11.9201 6.44126 12.0154 6.72704 12.0513 7.02448C12.0871 7.32193 12.0628 7.62412 11.9799 7.91068C11.897 8.19724 11.7575 8.4615 11.5707 8.68563C11.7663 8.98031 11.9364 9.29595 12.0779 9.62733C12.411 9.30623 12.671 8.90822 12.8381 8.46365C13.0052 8.01908 13.0749 7.53969 13.0419 7.06202C13.0089 6.58435 12.8742 6.12102 12.6479 5.70735C12.4216 5.29368 12.1097 4.94059 11.7361 4.67501C11.3625 4.40942 10.937 4.23835 10.492 4.17484C10.047 4.11133 9.59425 4.15705 9.16833 4.30852C8.74241 4.45999 8.35453 4.71321 8.03427 5.04887C7.714 5.38453 7.46981 5.79377 7.3203 6.2454C7.66631 6.25693 8.00445 6.30308 8.3308 6.38068ZM14.5255 6.76763C14.3952 6.76763 14.2702 6.82287 14.178 6.9212C14.0858 7.01954 14.034 7.1529 14.034 7.29196C14.034 7.43102 14.0858 7.56439 14.178 7.66272C14.2702 7.76105 14.3952 7.81629 14.5255 7.81629H15.5085C15.6389 7.81629 15.7639 7.76105 15.856 7.66272C15.9482 7.56439 16 7.43102 16 7.29196C16 7.1529 15.9482 7.01954 15.856 6.9212C15.7639 6.82287 15.6389 6.76763 15.5085 6.76763H14.5255Z"
@@ -170,7 +177,7 @@
             </button>
         </div>
         <div
-            class="h-36 w-4/5 backdrop-blur-md shadow-xl rounded-2xl flex flex-col justify-center items-center p-2 lg:w-1/4">
+            class="h-36 w-4/5 backdrop-blur-md shadow-xl rounded-2xl bg-white/10 flex flex-col justify-center items-center p-2 lg:w-1/4">
             <p class="text-center">Besançon, c’est très joli, il y a le musée du temps et une super horloge astronomique
                 aussi.</p>
             <button class="backdrop-blur-md shadow-xl rounded-2xl p-2">
